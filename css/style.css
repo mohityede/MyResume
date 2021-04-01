@@ -17,8 +17,12 @@ nav img{
 }
 
 footer {
-    height: 500px;
+    height: 100vh;
     background-color: rgb(28, 11, 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Navabar*/
@@ -123,6 +127,41 @@ p {
     text-align: justify;
 }
 
+/*Education*/
+.education-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.education-card:hover{
+    box-shadow: 5px 5px 5px 5px rgb(199, 199, 199);
+}
+.education-card img{
+    width: 400px;
+    height: 350px;
+}
+.education-card h4{
+    font-style: italic;
+}
+.education-card h5{
+    text-decoration: underline;
+}
+@media only screen and (max-width:900px){
+    .education-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:550px){
+    .education-card img{
+        width: 100%;
+        height: 50%;
+    }
+}
+
 /*Project*/
 .sub-section-alt {
     display: flex;
@@ -133,13 +172,17 @@ p {
 
 .project-card {
     width: 300px;
+    min-width: 270px;
     height: 500px;
-    box-shadow: 5px 5px 5px 5px rgb(199, 197, 197);
+    /* box-shadow: 5px 5px 5px 5px rgb(199, 197, 197); */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
     margin: 10px;
+}
+.project-card:hover{
+    box-shadow: 5px 5px 5px 5px rgb(199, 199, 199);
 }
 .project-container {
     width: 100%;
@@ -208,3 +251,4 @@ p {
         display: none;
     }
 }
+

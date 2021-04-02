@@ -25,6 +25,10 @@ footer {
     align-items: center;
 }
 
+.hover-shadow:hover{
+    box-shadow: 5px 5px 5px 5px rgb(199, 199, 199);
+}
+
 /*Navabar*/
 
 nav {
@@ -136,9 +140,7 @@ p {
     align-items: center;
     padding: 10px;
 }
-.education-card:hover{
-    box-shadow: 5px 5px 5px 5px rgb(199, 199, 199);
-}
+
 .education-card img{
     width: 400px;
     height: 350px;
@@ -162,6 +164,25 @@ p {
     }
 }
 
+/* Skills*/
+.skills-card {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+.skills-card img{
+    width: 100%;
+    height: 60%;
+}
+.skills-card .power {
+    width: 100%;
+    height: 5px;
+    background-color: cornsilk;
+}
+
 /*Project*/
 .sub-section-alt {
     display: flex;
@@ -181,9 +202,7 @@ p {
     padding: 5px;
     margin: 10px;
 }
-.project-card:hover{
-    box-shadow: 5px 5px 5px 5px rgb(199, 199, 199);
-}
+
 .project-container {
     width: 100%;
     display: flex;
@@ -251,4 +270,6 @@ p {
         display: none;
     }
 }
+
+
 
